@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+      div {
+        border-radius: 2px;
+      }
+      .param {
+        display: inline-block;
+      }
+      .param:before {
+        content: '\03BB'
+      }
+      .param:after {
+        content: '.'
+      }
+      .call-node {
+        display: inline-block;
+        padding: 3px;
+        border: 1px solid #888;
+        border-radius: 2px;
+      }
+      .call-node>div:first-child {
+        margin-right: 5px;
+      }
+      .lambda {
+        display: inline-block;
+      }
+      .atom {
+        display: inline-block;
+      }
+      .define-node {
+        display: inline-block;
+        padding: 3px;
+        border: 1px solid #F22;
+        border-radius: 2px;
+      }
+      .output-row {
+        padding: 5px;
+      }
+      div {
+        background-color: #FFF;
+      }
+      .resolved {
+        background-color: #CCC;
+      }
+      .old, .old div {
+        background-color: #FAA;
+      }
+      .new, .new div {
+        background-color: #AFA;
+      }
+      .resolved-parent {
+        background-color: #AAF;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="input"></textarea>
+    <div id="controls">
+      <button id="go">Reduce</button>
+    </div>
+    <div id="output" style='border: 1px solid #000'>
+    </div>
+
+    <script src="lambda-browser.js"></script>
+  </body>
+</html>
